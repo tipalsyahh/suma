@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma-Sumatra Inspirasi Indonesia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slider.css">
+    <link rel="stylesheet" href="css/slider.mobile.css">
+    <link rel="stylesheet" href="css/hiburan.css">
+    <link rel="stylesheet" href="css/olahraga.css">
+    <link rel="stylesheet" href="css/teknologi.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/icon.webp" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="img/navbar.png" alt="image">
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="dropdown" id="menu-dekstop">
+                <a href="#">Kategori ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">UI Kits</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </li>
+
+            <li id="menu-dekstop"><a href="#">Examples</a></li>
+
+            <li class="dropdown" id="menu-dekstop">
+                <a href="#">Free resources ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </li>
+
+            <li id="menu-dekstop"><a href="#">Pricing</a></li>
+
+            <li>
+                <button class="open-sidebar-btn" id="openSidebar">
+                    <i class="bi bi-list"></i>
+                    <span>Menu</span>
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="https://lampost.co/" class="btn-download">Lampost.co</a>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span>Menu</span>
+            <i class="bi bi-x" id="closeSidebar"></i>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-dropdown">
+                <a href="#" class="sidebar-toggle">Kategori ▾</a>
+                <ul class="sidebar-submenu">
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">UI Kits</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Free resources</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+    </div>
+    <div class="content">
+        <section class="hero-slider fade-in">
+            <div class="slider-dekstop">
+                <div class="hero-track fade-in">
+                    <article class="hero-left fade-in"></article>
+                    <div class="hero-right fade-in">
+                        <div class="hero-right-bottom fade-in">
+                            <article class="hero-box bottom-1"></article>
+                        </div>
+                        <div class="hero-right-top fade-in">
+                            <article class="hero-box top-1"></article>
+                            <article class="hero-box top-2"></article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="slider-mobile">
+            <div class="hero-flex">
+                <div class="hero-main" id="hero-main"></div>
+                <div class="hero-sub">
+                    <div class="hero-item" id="hero-sub-1"></div>
+                    <div class="hero-item" id="hero-sub-2"></div>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-berita">
+            <div class="berita-utama">
+                <h3 class="judul-section">Berita Terkini</h3>
+                <div class="info">
+                </div>
+                <div class="teknologi"></div>
+                <div class="otomotif"></div>
+            </div>
+            <div class="berita-left">
+                <h3 class="text-berita-left">Berita Terpopuler</h3>
+                <div class="hiburan"></div>
+                <div class="sport"></div>
+            </div>
+        </div>
+    </div>
+    <button id="backToTop"><i class="bi bi-arrow-up"></i></button>
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <div class="brand">
+                    <img src="img/navbar.png" alt="image">
+                </div>
+
+                <p class="desc">
+                    Suma.id adalah rumah berita dari seluruh wilayah Sumatra.
+                </p>
+
+                <div class="social">
+                    <a href="#">f</a>
+                    <a href="#">t</a>
+                    <a href="#">i</a>
+                </div>
+            </div>
+
+            <div class="footer-menu">
+                <div class="menu-col">
+                    <h5>ALL PAGES</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Works</a>
+                    <a href="#">Career</a>
+                </div>
+
+                <div class="menu-col">
+                    <h5>HELP</h5>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Delivery Details</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Community</a>
+                </div>
+
+                <div class="menu-col">
+                    <h5>LEGAL</h5>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="left">
+                <a href="#">Privacy policy</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="right">
+                © Copyright 2026, All Rights Reserved by Suma
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/scrip.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/slider.mobile.js"></script>
+<script src="js/berita-utama.js"></script>
+<script src="js/hiburan.js"></script>
+<script src="js/olahraga.js"></script>
+<script src="js/teknologi.js"></script>
+<script src="js/otomotif.js"></script>
+</html>

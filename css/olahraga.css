@@ -1,0 +1,75 @@
+.berita-left {
+  padding: 10px;
+  flex: 1;
+  position: sticky;
+  top: 10px;
+  overflow: hidden;
+}
+
+.slider-outer {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 100%;
+}
+
+.slide {
+  min-width: 100%;
+  display: flex;
+  gap: 10px;
+  box-sizing: border-box;
+}
+
+.card-slider {
+  width: 50%;
+  background: #fff;
+  overflow: hidden;
+  text-decoration: none;
+  color: #000;
+}
+
+.card-slider img {
+  width: 100%;
+  height: 110px;
+  object-fit: cover;
+  display: block;
+}
+
+.card-slider .content {
+  padding: 8px;
+}
+
+.card-slider .kategori {
+  color: #007bff;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.card-slider .judul {
+  font-size: 13px;
+  margin-top: 5px;
+  line-height: 1.3;
+}
+
+.dots {
+  text-align: center;
+  margin-top: 6px;
+}
+
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background: #ccc;
+  border-radius: 50%;
+  margin: 0 3px;
+}
+
+.dot.active {
+  background: #007bff;
+}

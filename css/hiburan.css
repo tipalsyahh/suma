@@ -1,0 +1,47 @@
+.hiburan {
+  padding: 10px 15px;
+}
+
+.text-berita-left {
+    color: #007bff;
+}
+
+.list-berita {
+  display: flex;
+  gap: 12px;
+  text-decoration: none;
+  margin-bottom: 18px;
+}
+
+.list-berita:hover .judul,
+.list-berita:hover .meta {
+  color: #007bff;
+}
+
+.list-berita .judul,
+.list-berita .meta {
+  transition: 0.2s ease;
+}
+
+.nomor {
+  font-weight: bold;
+  color: #9ca3af;
+  min-width: 30px;
+}
+
+.konten {
+  flex: 1;
+}
+
+.konten .judul {
+  font-weight: 600;
+  color: #111;
+  margin: 0 0 5px;
+  line-height: 1.3;
+}
+
+.meta {
+  font-size: 13px;
+  color: #9ca3af;
+  margin: 0;
+}
