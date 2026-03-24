@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma-Sumatra Inspirasi Indonesia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/halaman.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="icon" href="img/icon.webp" type="image/png">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-left">
+            <div class="logo">
+                <img src="img/navbar.png" alt="image">
+            </div>
+        </div>
+
+        <ul class="nav-menu">
+            <li class="dropdown" id="menu-dekstop">
+                <a href="#">Kategori ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">UI Kits</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </li>
+
+            <li id="menu-dekstop"><a href="#">Examples</a></li>
+
+            <li class="dropdown" id="menu-dekstop">
+                <a href="#">Free resources ▾</a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Templates</a></li>
+                    <li><a href="#">Guides</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </li>
+
+            <li id="menu-dekstop"><a href="#">Pricing</a></li>
+
+            <li>
+                <button class="open-sidebar-btn" id="openSidebar">
+                    <i class="bi bi-list"></i>
+                    <span>Menu</span>
+                </button>
+            </li>
+        </ul>
+
+        <div class="nav-right">
+            <a href="https://lampost.co/" class="btn-download">Lampost.co</a>
+        </div>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <span>Menu</span>
+            <i class="bi bi-x" id="closeSidebar"></i>
+        </div>
+        <ul class="sidebar-menu">
+            <li class="sidebar-dropdown">
+                <a href="#" class="sidebar-toggle">Kategori ▾</a>
+                <ul class="sidebar-submenu">
+                    <li><a href="#">Feature</a></li>
+                    <li><a href="#">UI Kits</a></li>
+                    <li><a href="#">Integrations</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#">Examples</a></li>
+            <li><a href="#">Free resources</a></li>
+            <li><a href="#">Pricing</a></li>
+        </ul>
+    </div>
+        <div class="container">
+        <div class="berita" id="berita">
+            <h1 class="judul-berita"></h1>
+
+            <p class="meta-berita">
+                <strong id="editor">Lampost</strong> |
+                <span id="tanggal"></span>
+                <button id="voiceToggle" class="voice-btn">
+                    <i class="bi bi-volume-up"></i>
+                </button>
+            </p>
+
+            <img class="gambar-berita">
+
+            <div class="isi-berita"></div>
+            <div class="ai-tags" id="aiTags"></div>
+            <div class="home">
+            </div>
+        </div>
+        <div class="iklan-halaman">
+            <h2>KORAN DIGITAL</h2>
+            <div class="line-accent"></div>
+            <div class="tagar">
+                <a href="harian.html">
+                    <img src="image/showcase-350pxl2.gif" alt="img" class="epaper-image" id="epeper-microweb">
+                </a>
+            </div>
+            <h2>BERITA TERKINI</h2>
+            <div class="line-accent"></div>
+            <div class="terbaru">
+            </div>
+        </div>
+    </div>
+    <button id="backToTop"><i class="bi bi-arrow-up"></i></button>
+    <footer class="footer">
+        <div class="footer-top">
+
+            <div class="footer-brand">
+                <div class="brand">
+                    <img src="img/navbar.png" alt="image">
+                </div>
+
+                <p class="desc">
+                    Suma.id adalah rumah berita dari seluruh wilayah Sumatra.
+                </p>
+
+                <div class="social">
+                    <a href="#">f</a>
+                    <a href="#">t</a>
+                    <a href="#">i</a>
+                </div>
+            </div>
+
+            <div class="footer-menu">
+                <div class="menu-col">
+                    <h5>ALL PAGES</h5>
+                    <a href="#">About Us</a>
+                    <a href="#">Our Services</a>
+                    <a href="#">Works</a>
+                    <a href="#">Career</a>
+                </div>
+
+                <div class="menu-col">
+                    <h5>HELP</h5>
+                    <a href="#">Customer Support</a>
+                    <a href="#">Delivery Details</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Community</a>
+                </div>
+
+                <div class="menu-col">
+                    <h5>LEGAL</h5>
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <div class="left">
+                <a href="#">Privacy policy</a>
+                <a href="#">Sitemap</a>
+                <a href="#">Terms of Use</a>
+            </div>
+            <div class="right">
+                © Copyright 2026, All Rights Reserved by Suma
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/scrip.js"></script>
+<script src="js/halaman.js"></script>
+<script src="js/voice.js"></script>
+</html>

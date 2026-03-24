@@ -1,6 +1,6 @@
 .tek-wrapper {
   display: flex;
-  gap: 20px;
+  gap: 10px;
 }
 
 .tek-left {
@@ -40,4 +40,11 @@
   height: 100%;
   object-fit: cover;
   border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+  .tek-wrapper {
+    display: block;
+    padding: 10px;
+  }
 }

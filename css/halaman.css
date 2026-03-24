@@ -1,0 +1,157 @@
+.container {
+    padding: 10px calc((100% - 1200px) / 2);
+    display: flex;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.berita {
+    width: 63%;
+    overflow: hidden;
+    padding: 10px;
+}
+
+.iklan-halaman {
+    flex: 1;
+    position: sticky;
+    top: 10px;
+    padding: 10px;
+}
+
+.berita a {
+    text-decoration: none;
+    color: #DC0000;
+}
+
+.judul-berita {
+    color: #333;
+}
+
+.gambar-berita {
+    width: 100%;
+    height: auto;
+}
+
+.terbaru {
+    margin-top: 10px;
+}
+
+.terbaru a {
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+.item-microweb {
+    display: flex;
+    padding: 10px 0;
+    text-decoration: none;
+}
+
+.berita-microweb {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.judul-terbaru {
+    font-size: 15px;
+    color: #000;
+    margin: 0 0 10px 0;
+}
+
+.img-terbaru-teknokrat {
+    width: 100px;
+    height: 100px;
+    display: block;
+    object-fit: cover;
+}
+
+.tanggal-berita {
+    font-size: 12px;
+    color: #777;
+}
+
+.isi-berita {
+    text-align: justify;
+    text-justify: inter-word;
+    hyphens: auto;
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+.baca-selengkapnya {
+    color: #DC0000;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.voice-btn {
+    font-size: 20px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    background: transparent;
+    color: #333;
+}
+
+.editor {
+    font-size: 12px;
+    color: #45b4f5;
+}
+
+.iklan-parent {
+    width: 30%;
+    position: sticky;
+    top: 10px;
+}
+
+.ai-tags {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.ai-tags a {
+    color: #007bff;
+    font-size: 15px;
+    cursor: pointer;
+    padding: 6px 12px;
+    border-radius: 20px;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+@media (max-width: 768px) {
+    .container {
+        display: block;
+        padding: 20px;
+    }
+
+    .berita {
+        border: none;
+        padding: 0;
+        width: 100%;
+    }
+
+    .iklan-halaman {
+        width: 100%;
+    }
+
+    .card p {
+        font-size: 12px;
+    }
+
+    .detail-text h2 {
+        font-size: 15px;
+    }
+
+    .detail-text p {
+        font-size: 12px;
+    }
+
+}
