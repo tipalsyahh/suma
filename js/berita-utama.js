@@ -111,18 +111,20 @@ document.addEventListener('DOMContentLoaded', () => {
         const judul = post.title.rendered;
         const tanggal = formatTanggal(post.date);
         const gambar = await getMedia(post.featured_media);
-
         const deskripsi = stripHTML(post.excerpt.rendered).slice(0, 120) + '...';
 
+        const catId = post.categories?.[0];
+        const { name: kategori, slug } = await getCategory(catId);
+
         const id = `post-${post.id}`;
-        const link = `halaman.html?berita/${post.slug}`;
+        const link = `halaman.html?${slug}/${post.slug}`;
 
         htmlArr.push(`
           <a href="${link}" class="item-berita" id="${id}">
             <div class="info-berita">
               <p class="judul">${judul}</p>
               <p class="deskripsi">${deskripsi}</p>
-              <p class="kategori">...</p>
+              <p class="kategori">${kategori}</p>
               <div class="detail-info">
                 <p class="editor">By ...</p>
                 <p class="tanggal">${tanggal}</p>
@@ -133,14 +135,11 @@ document.addEventListener('DOMContentLoaded', () => {
         `);
 
         (async () => {
-          const catId = post.categories?.[0];
-          const { name: kategori } = await getCategory(catId);
           const editor = await getEditor(post);
 
           const el = document.getElementById(id);
           if (!el) return;
 
-          el.querySelector('.kategori').textContent = kategori;
           el.querySelector('.editor').textContent = `By ${editor}`;
         })();
 

@@ -5,15 +5,19 @@ document.addEventListener('DOMContentLoaded', async () => {
 
   const catCache = {};
 
-  async function getCategoryName(catId) {
-    if (!catId) return 'Berita';
+  async function getCategory(catId) {
+    if (!catId) return { name: 'Berita', slug: 'berita' };
     if (catCache[catId]) return catCache[catId];
 
     const res = await fetch(`https://lampost.co/wp-json/wp/v2/categories/${catId}`);
-    if (!res.ok) return 'Berita';
+    if (!res.ok) return { name: 'Berita', slug: 'berita' };
 
     const data = await res.json();
-    return (catCache[catId] = data.name || 'Berita');
+
+    return (catCache[catId] = {
+      name: data.name || 'Berita',
+      slug: data.slug || 'berita'
+    });
   }
 
   function formatTanggal(dateString) {
@@ -70,11 +74,13 @@ document.addEventListener('DOMContentLoaded', async () => {
       const judul = post.title.rendered;
       const nomor = i + 1;
 
-      const kategori = await getCategoryName(post.categories?.[0]);
+      const { name: kategori, slug } = await getCategory(post.categories?.[0]);
       const tanggal = formatTanggal(post.date);
 
+      const link = `halaman.html?${slug}/${post.slug}`;
+
       html += `
-        <a href="halaman.html?berita/${post.slug}" class="list-berita">
+        <a href="${link}" class="list-berita">
           <div class="nomor">#${nomor}</div>
           <div class="konten">
             <p class="judul">${judul}</p>
